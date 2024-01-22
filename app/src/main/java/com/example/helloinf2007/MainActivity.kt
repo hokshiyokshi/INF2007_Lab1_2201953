@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
         val currentDateTime = LocalDateTime.now()
 
         // Define a custom date and time format
-        val formatter = DateTimeFormatter.topofPattern("yyyy-MM-dd HH:mm:ss")
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
 
         // Format the current date and time using the formatter
         val formattedDateTime = currentDateTime.format(formatter)
@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Nihao $name!",
         modifier = modifier
     )
 }
